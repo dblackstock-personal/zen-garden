@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Satisfy');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+*{
+    margin:0;
+}
+
+.page-wrapper {
+    font-family: 'IBM Plex Mono',monospace;
+    color:grey;
+}
+div {
+    /* padding: 3px 3px 3px 0; */
+}
+
+p, h3 {
+    padding: 3px 5% 3px;
+    font-size: 1.5vh;
+}
+
+h2 {
+    background: url(../img/zen.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 40%;
+}
+
+h3 {
+    font-family: 'Open Sans';
+    color:black;
+    font-size: 2vh;
+    padding-top:15px;
+}
+
+header{
+    background: no-repeat url("../img/huntington.png");
+    background-size:cover;
+    text-align: center;
+    font-family: 'IBM Plex Mono';
+    color:whitesmoke;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 30px;
+}
+
+header h1 {
+    text-transform: uppercase;
+    text-shadow: 3px 4px 2px black;
+    font-size: 3vw;
+}
+
+header h2, [role=contentinfo] a:link {
+    font-family: 'Satisfy';
+    font-style: italic;
+    font-size: 3vw;
+    color:white;
+}
+
+header h2 {
+    color: transparent;
+    font-size: 1.5vw;
+    text-shadow: 0 0 1px white;
+}
+
+#zen-summary a:hover, #zen-requirements a:hover{
+    text-decoration: underline;
+}
+
+#zen-participation, #zen-benefits {
+    color:white;
+    background: url("../img/bamboo.png");
+    background-color: rgba(73, 141, 99, 0.705);
+    background-blend-mode: multiply;
+    padding-bottom:1px;
+    padding-top:1px;
+}
+
+a:link {
+    color: black;
+    text-decoration: none;
+  }
+
+[role=contentinfo]{
+    background:rgba(128,157,127);
+    padding:2% 6%;
+    text-align: center;
+    font-family: 'Open Sans';
+    font-size:1.5vw;
+    color:rgb(189, 186, 186);
+    margin-bottom:0;
+}
+
+footer{
+    text-align:center;
+    background:rgb(47,79,76);
+    font-size:2.2vw;
+    padding: 1% 0;
+}
+
+footer a:link{
+    color: white;
+}
+
+footer a:link:hover{
+    color: darkgrey;
+}
+
+.design-archives, .design-selection{
+    background:rgb(218,225,217)
+}
+
+.select, .archives, .resources{
+    font-size:0;
+    padding:0;
+}
+
+ul{
+    /* columns:2; */
+    list-style-type: none;
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+nav ul li{
+    flex:0 0 50%;
+    padding: 3% 0;
+    box-sizing: border-box;
+    color:rgb(189, 186, 186);
+}
+
+#design-selection nav ul li{
+    border-bottom: 1px solid rgb(189, 186, 186);
+}
+
+a.design-name{
+    font-family: 'Open Sans';
+}
+
+a.designer-name, .next a, .viewall a{
+    color:rgb(189, 186, 186);
+}
+
+.zen-resources {
+    color:darkgray;
+    background: url("../img/bamboo.png");
+    background-color: rgba(73, 141, 99, 0.705);
+    background-blend-mode: multiply;
+    padding-bottom:1px;
+    padding-top:1px;
+}
+
+.zen-resources ul{
+    flex-direction: column;
+    list-style-type: none;
+    text-align:center;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    height:20vh;
+}
+
+.zen-resources ul li{
+    /* flex:0 0 50%; */
+    padding: 1% 0;
+    box-sizing: border-box;
+}
+
+.zen-resources a {
+    color: rgb(3, 85, 3);
+}
+
+/* Tried:
+Adding border to ul li (this works in the flexbox example css)*/
